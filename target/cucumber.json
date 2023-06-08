@@ -1,0 +1,324 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-14T19:53:03.224Z",
+        "line": 5,
+        "name": "login with valid login credentials",
+        "description": "",
+        "id": "login-for-sauce-demo;login-with-valid-login-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3061531100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the url of saucedemo website",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_enter_the_url_of_saucedemo_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77950000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter valid username",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_enter_valid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54265300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter valid password",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_enter_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84538000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter login button",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_enter_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143613400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I will reach the HomePage for products",
+            "match": {
+              "location": "stepDefinitions.loginSteps.i_will_reach_the_HomePage_for_products()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login for sauce demo",
+    "description": " As a user, I want to login to the website",
+    "id": "login-for-sauce-demo",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-14T19:53:06.690Z",
+        "line": 11,
+        "name": "Multiple users Login",
+        "description": "",
+        "id": "login-with-multiple-user;multiple-users-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1536703700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to sauce labs",
+            "match": {
+              "location": "stepDefinitions.multiLoginSteps.sauceDemo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 216029200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter Username as \"standard_user\" and Password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 21
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 53
+                }
+              ],
+              "location": "stepDefinitions.multiLoginSteps.I_enter_Username_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137971100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login should be successful",
+            "match": {
+              "location": "stepDefinitions.multiLoginSteps.validateRelogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-14T19:53:08.585Z",
+        "line": 12,
+        "name": "Multiple users Login",
+        "description": "",
+        "id": "login-with-multiple-user;multiple-users-login;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1020262800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to sauce labs",
+            "match": {
+              "location": "stepDefinitions.multiLoginSteps.sauceDemo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 172046600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter Username as \"locked_out_user\" and Password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "locked_out_user",
+                  "offset": 21
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinitions.multiLoginSteps.I_enter_Username_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".app_logo\"}\n  (Session info: chrome\u003d113.0.5672.93)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-alpha-5\u0027, revision: \u0027b3a0d621cc\u0027\nSystem info: host: \u0027RITSANEVAN\u0027, ip: \u0027192.168.1.165\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\\Users\\Thapa\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9e6fcdefc3f97147f508c952293e6893\n*** Element info: {Using\u003dcss selector, value\u003d.app_logo}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:494)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)\r\n\tat stepDefinitions.multiLoginSteps.validateRelogin(multiLoginSteps.java:36)\r\n\tat ✽.login should be successful(file:///C:/Users/Thapa/eclipse-Rituworkspace/bddcucumber/src/test/resources/Features/multiuserslogin.feature:7)\r\n",
+              "duration": 14129800,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "login should be successful",
+            "match": {
+              "location": "stepDefinitions.multiLoginSteps.validateRelogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-14T19:53:09.804Z",
+        "line": 13,
+        "name": "Multiple users Login",
+        "description": "",
+        "id": "login-with-multiple-user;multiple-users-login;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1112248100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to sauce labs",
+            "match": {
+              "location": "stepDefinitions.multiLoginSteps.sauceDemo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 195014700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter Username as \"problem_user\" and Password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "problem_user",
+                  "offset": 21
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 52
+                }
+              ],
+              "location": "stepDefinitions.multiLoginSteps.I_enter_Username_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129166800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login should be successful",
+            "match": {
+              "location": "stepDefinitions.multiLoginSteps.validateRelogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-14T19:53:11.244Z",
+        "line": 14,
+        "name": "Multiple users Login",
+        "description": "",
+        "id": "login-with-multiple-user;multiple-users-login;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 882216800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to sauce labs",
+            "match": {
+              "location": "stepDefinitions.multiLoginSteps.sauceDemo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5232294400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter Username as \"performance_glitch_user\" and Password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "performance_glitch_user",
+                  "offset": 21
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 63
+                }
+              ],
+              "location": "stepDefinitions.multiLoginSteps.I_enter_Username_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137453600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login should be successful",
+            "match": {
+              "location": "stepDefinitions.multiLoginSteps.validateRelogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login with multiple user",
+    "description": "  I want to verify login with multiple users",
+    "id": "login-with-multiple-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/multiuserslogin.feature",
+    "tags": []
+  }
+]
